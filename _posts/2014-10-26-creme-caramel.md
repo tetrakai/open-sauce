@@ -12,9 +12,8 @@ prep_time: 1.5 hours
 gluten_free: true
 dairy_free: false
 ingredients: {
-  'caster sugar, for caramel': '1/2 cup',
-  'cold water, for caramel': '2/3 cup',
-  'caster sugar': '1/4 cup',
+  'caster sugar': '2/3 cup',
+  'cold water': '1/2 cup',
   'thickened cream': '150mL',
   'milk': '3/4 cup',
   'vanilla extract': '1 tsp',
@@ -22,8 +21,8 @@ ingredients: {
 }
 method: [
   'Preheat oven to 170°C (330°F)',
-  'Combine 1/3 cup sugar and 1/2 cup cold water in a saucepan over low heat.
-  Cook, stirring, for 5 minutes or until sugar has dissolved.',
+  'Combine <strong>1/3 cup</strong> sugar and 1/2 cup cold water in a saucepan
+  over low heat. Cook, stirring, for 5 minutes or until sugar has dissolved.',
   'Increase heat to high (maximum). Bring to the boil. Boil, without stirring,
   for 5 to 7 minutes or until golden (if using thick based saucepan, remove
   from heat as soon as mixture starts going brown).',
@@ -31,7 +30,7 @@ method: [
   'Combine cream, milk and vanilla in a saucepan over medium heat. Cook,
   stirring, for 6 to 8 minutes or until small bubbles form at edge of pan.
   Remove from heat.',
-  ' Whisk eggs and remaining sugar in a bowl until pale and creamy. Slowly add
+  'Whisk eggs and remaining sugar in a bowl until pale and creamy. Slowly add
   cream mixture, whisking constantly. Strain mixture into a jug. Divide between
   ramekins.',
   'Place ramekins in a large baking dish. Pour boiling water into baking dish
