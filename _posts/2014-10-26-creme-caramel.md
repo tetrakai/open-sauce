@@ -14,15 +14,16 @@ dairy_free: false
 ingredients: {
   'caster sugar': '2/3 cup',
   'cold water': '1/2 cup',
-  'thickened cream': '150mL',
-  'milk': '3/4 cup',
+  'thickened cream': '225mL',
+  'milk': '1&nbsp;&nbsp;1/4 cup',
   'vanilla extract': '1 tsp',
-  'eggs': 3
+  'eggs': 5
 }
 method: [
   'Preheat oven to 170°C (330°F)',
-  'Combine <strong>1/3 cup</strong> sugar and 1/2 cup cold water in a saucepan
-  over low heat. Cook, stirring, for 5 minutes or until sugar has dissolved.',
+  'Combine <strong>1/3 cup</strong> (half of the) sugar and 1/2 cup cold water
+  in a saucepan over low heat. Cook, stirring, for 5 minutes or until sugar
+  has dissolved.',
   'Increase heat to high (maximum). Bring to the boil. Boil, without stirring,
   for 5 to 7 minutes or until golden (if using thick based saucepan, remove
   from heat as soon as mixture starts going brown).',
