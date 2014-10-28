@@ -20,7 +20,7 @@ ingredients: {
   'eggs': 5
 }
 method: [
-  'Preheat oven to 170°C (330°F)',
+  'Preheat oven to 170°C (330°F).',
   'Combine <strong>1/3 cup</strong> (half of the) sugar and 1/2 cup cold water
   in a saucepan over low heat. Cook, stirring, for 5 minutes or until sugar
   has dissolved.',
