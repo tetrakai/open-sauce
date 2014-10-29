@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<!--main-->
+<main class="main" role="main">
+  <!--wrap-->
+  <div class="wrap clearfix">
+    <!--row-->
+    <div class="row" style="margin-top: 30px; margin-left: -12px; margin-right: -43px">
+      <!--left sidebar-->
+<!--       <aside class="sidebar one-third" style="padding-right: 15px">
+        <div class="widget">
+          <ul class="categories left">
+            <li class="active"><a href="#">All recipes</a></li>
+            <li><a href="#">Baking</a></li>
+            <li><a href="#">Desserts</a></li>
+            <li><a href="#">Dinner</a></li>
+          </ul>
+        </div>
+      </aside> -->
+      <!--//left sidebar-->
+
+      <!--content-->
+      <section class="content">
+        <!--entries-->
+        <div class="entries row">
+          {% for post in site.posts %}
+            <!--item-->
+            {% if page.category_filter == None or page.category_filter == post.category %}
+            <div class="entry one-third" style="margin-bottom: 15px">
+              <figure style="height: 169px; overflow: hidden;">
+                <img src="{% if post.title_image %}{{ post.title_image }}{% else %}{{ post.local_image | prepend: 'img/recipes/' | prepend: site.baseurl }}{% endif %}" alt="{{ post.title }}" />
+                <figcaption><a href="{{ post.url }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+              </figure>
+              <div class="container">
+                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <div class="actions">
+                  <div>
+                    <div class="likes" style="width: 119px; max-width: 119px"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ post.prep_time }}</div>
+                    <div class="comments" style="width: 119px; text-align: center"><a href="{{ post.category | downcase | append: '.html' | prepend: site.baseurl }}">{{ post.category }}</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <!--//entries-->
+      </section>
+      <!--//content-->
+    </div>
+    <!--//row-->
+  </div>
+  <!--//wrap-->
+</main>
+<!--//main-->
