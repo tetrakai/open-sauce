@@ -4,8 +4,9 @@
 
     <nav class="main-nav" role="navigation" id="menu">
       <ul>
-        <li><a href="baking.html"><span>Baking</span></a></li>
-        <li><a href="dessert.html"><span>Dessert</span></a></li>
+      {% for category in site.categories %}
+        <li><a href="{{ category[0] | downcase }}.html"><span>{{ category[0] }}</span></a></li>
+      {% endfor %}
       </ul>
     </nav>
 
