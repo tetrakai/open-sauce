@@ -19,7 +19,7 @@ layout: default
                     <header class="s-title">
                       <h1>{{ page.title }}</h1>
                     </header>
-                    <img src="{{ page.title_image }}" style="width: 100%;"/>
+                    <img src="{% if page.title_image %}{{ page.title_image }}{% else %}{{ page.local_image | prepend: 'img/recipes/' | prepend: site.baseurl }}{% endif %}" style="width: 100%;"/>
                   </div>
                   <div class="intro">
                   <p><strong>{{ page.description }}</strong></p>
