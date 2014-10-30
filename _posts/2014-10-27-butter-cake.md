@@ -2,7 +2,6 @@
 title:  'Butter cake'
 date:   2014-10-27 21:00
 category: Baking
-tags:
 title_image: 'http://bakistryblog.files.wordpress.com/2013/06/a88a8-buttercakelight02.jpg'
 description: 'A wonderfully sweet base for cooking adventures'
 makes: 12 servings

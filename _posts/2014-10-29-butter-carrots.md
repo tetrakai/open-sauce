@@ -2,8 +2,6 @@
 title:  'Butter Carrots'
 date:   2014-10-29 21:00
 category: Dinner
-tags:
- - Gluten free
 title_image: 'https://1.bp.blogspot.com/-Ke0PO3iBzNs/T2cw0fad-dI/AAAAAAAAIXk/LukTuBQOo9o/s1600/honey+balsamic+butter+carrots.jpg'
 description: 'A family recipe, even carrot-haters will enjoy these!'
 makes: 2 servings

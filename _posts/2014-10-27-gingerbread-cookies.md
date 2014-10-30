@@ -2,7 +2,6 @@
 title:  'Gingerbread Cookies'
 date:   2014-10-27 21:00
 category: Baking
-tags:
 title_image: 'http://www.cakeandallie.com/wp-content/uploads/2011/12/DSC_0127.jpg'
 description: 'These smell and taste like Christmas, and are as fun to make as they are to eat'
 makes: 20

@@ -2,9 +2,6 @@
 title:  'Crispy Potato'
 date:   2014-10-29 21:00
 category: Dinner
-tags:
- - Gluten free
- - Dairy free
 title_image: 'https://4.bp.blogspot.com/_0Wr1j_BQLXM/TL7nHsCOrcI/AAAAAAAACHY/9LaXFThtuKo/s1600/Crispy+Potato+Cubes.JPG'
 description: 'Deliciously crispy, these make a great change to roast potatoes'
 makes: 4 servings

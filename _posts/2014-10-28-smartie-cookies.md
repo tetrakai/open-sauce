@@ -2,7 +2,6 @@
 title:  'Smartie Cookies'
 date:   2014-10-28 21:00
 category: Baking
-tags:
 title_image: 'http://littlebittybakes.files.wordpress.com/2012/09/smarties-sugar-cookies.jpg'
 description: 'Great party pleasers, these bring a touch of colour to the table.'
 makes: 20
