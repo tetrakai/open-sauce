@@ -1,6 +1,6 @@
 ---
-title:  'Lemon Curd Tartlets'
-date:   2014-10-27 21:00
+title: 'Lemon Curd Tartlets'
+date: 2014-10-27
 category: Baking
 title_image: 'http://www.taste.com.au/images/recipes/agt/2005/07/2204_l.jpg'
 description: 'Delicious, lemony goodness, these make summer time afternoon teas awesome'

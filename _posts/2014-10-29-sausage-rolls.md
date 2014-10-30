@@ -1,6 +1,6 @@
 ---
-title:  'Sausage Rolls'
-date:   2014-10-28 21:00
+title: 'Sausage Rolls'
+date: 2014-10-28
 category: Dinner
 title_image: 'http://www.taste.com.au/images/recipes/wfr/2005/10/13975_l.jpg'
 description: 'Good old Aussie sausage rolls, these spice up any meat-eating party'

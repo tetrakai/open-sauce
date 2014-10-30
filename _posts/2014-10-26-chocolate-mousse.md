@@ -1,6 +1,6 @@
 ---
-title:  'Chocolate Mousse'
-date:   2014-10-26 21:00
+title: 'Chocolate Mousse'
+date: 2014-10-26
 category: Dessert
 title_image: 'http://bookpage.com/the-book-case/wp-content/uploads/2012/06/91_Food-Processor-Chocolate-Mousse.jpg'
 description: 'This classic recipe is light but deliciously rich. Thick and creamy and bad for you.'

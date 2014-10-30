@@ -1,6 +1,6 @@
 ---
-title:  'Apple Tea Cake'
-date:   2014-10-26 21:00
+title: 'Apple Tea Cake'
+date: 2014-10-26
 category: Baking
 title_image: 'http://www.taste.com.au/images/recipes/del/2004/06/5106_l.jpg'
 description: 'Fill the house with the beautiful aroma of freshly baked apple tea cake, then slice and enjoy!'

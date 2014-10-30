@@ -1,6 +1,6 @@
 ---
-title:  'Lemon Slice'
-date:   2014-10-27 21:00
+title: 'Lemon Slice'
+date: 2014-10-27
 category: Baking
 title_image: 'http://www.todayprimetime.com/wp-content/uploads/2014/04/Lemon-slice.jpg'
 description: "Super morish, it's hard not to have another piece of this delectable slice"

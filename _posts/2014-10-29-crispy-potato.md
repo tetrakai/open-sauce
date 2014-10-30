@@ -1,6 +1,6 @@
 ---
-title:  'Crispy Potato'
-date:   2014-10-29 21:00
+title: 'Crispy Potato'
+date: 2014-10-29
 category: Dinner
 title_image: 'https://4.bp.blogspot.com/_0Wr1j_BQLXM/TL7nHsCOrcI/AAAAAAAACHY/9LaXFThtuKo/s1600/Crispy+Potato+Cubes.JPG'
 description: 'Deliciously crispy, these make a great change to roast potatoes'

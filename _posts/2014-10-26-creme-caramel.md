@@ -1,6 +1,6 @@
 ---
-title:  'Crème Caramel'
-date:   2014-10-26 21:00
+title: 'Crème Caramel'
+date: 2014-10-26
 category: Dessert
 title_image: 'http://www.taste.com.au/images/recipes/sfi/2009/04/22362_l.jpg'
 description: 'Perfect for an after-dinner sweet treat.'

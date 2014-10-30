@@ -1,6 +1,6 @@
 ---
-title:  'Microwave Baked Pears'
-date:   2014-10-27 21:00
+title: 'Microwave Baked Pears'
+date: 2014-10-27
 category: Dessert
 title_image: 'https://4.bp.blogspot.com/-swY5l52gsPE/Tk63cnxFG2I/AAAAAAAAAJ4/RYV-YN3X4ig/s1600/013.JPG'
 description: 'Want dessert in a snap? These delicious pears take just minutes to make'
