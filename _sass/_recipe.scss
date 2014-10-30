@@ -1,13 +1,7 @@
-$light_color: #77BB77;
-$light_color_alpha: rgba(119, 192, 119, 0.75);
-$dark_color: #337733;
-$user_highlight_color: #bbaa99;
-$selection_color: #449944;
-
 * {box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
 body {font:14px/1.42 'Raleway',Arial,Helvetica,sans-serif;text-align:center;color:#444;background:#DECEB9 url(../img/body.jpg) 0 0 repeat;overflow-x:hidden;word-wrap:break-word;text-rendering:optimizeLegibility;}
 html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,table,caption,tbody,tfoot,thead,tr,th,td,figure{border:0;margin:0;padding:0}
-html {overflow-y: scroll;-webkit-text-size-adjust:auto;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color:#FF7A73;}
+html {overflow-y: scroll;-webkit-text-size-adjust:auto;-webkit-overflow-scrolling: touch;-webkit-tap-highlight-color:$light_color;}
 
 img,fieldset,abbr,acronym{border:0;}
 article,aside,figure,figcaption,hgroup,footer,header,nav,section,video,object{display:block;}
@@ -29,7 +23,7 @@ span.reference {
 .three-fourth 	 {float:left;width:75%;padding:0 15px 30px;max-width:100%;}
 .one-half		 {float:left;width:50%;padding:0 15px 30px;max-width:100%;}
 .one-third 		 {float:left;width:33.33%;padding:0 30px 15px 0;max-width:100%;}
-.two-third 		{float:left;width:66.66%;padding:0 0 30px 15px;max-width:100%;}
+.two-third 		{float:left;width:66.66%;padding:0 0 0 15px;max-width:100%;}
 .one-fourth 		 {float:left;width:25%;padding:0 15px 30px;max-width:100%;}
 .one-fifth 		 {float:left;width:20%;padding:0 15px 30px;max-width:100%;}
 .one-sixth 		 {float:left;width:16.66%;padding:0 15px 30px;max-width:100%;}
@@ -64,7 +58,7 @@ p 			{padding:0 0 18px;line-height:1.6;}
 p:empty 		{display:none;}
 .lead 		{font-size:17px;font-weight:500;}
 strong 		{font-weight:700;}
-em 			{font-weight:700;font-style:normal;color:#FF7A73;}
+em 			{font-weight:700;font-style:normal;color:$light_color;}
 
 ul 				{margin:0 0 20px;}
 ul > li	  		{list-style:none;position:relative;padding:0 0 10px 15px;}
@@ -365,7 +359,7 @@ section.cta h2 	{padding:0;line-height:48px;}
 
 /*RECIPE*/
 .recipe 			{float:left;max-width:100%;}
-.recipe .image 	{float:left;width:100%;-webkit-box-shadow:0 0 1px rgba(0,0,0,.2);-moz-box-shadow:0 0 1px rgba(0,0,0,.2);box-shadow:0 0 1px rgba(0,0,0,.2); position: relative; margin-top: 30px;}
+.recipe .image 	{float:left;width:100%;-webkit-box-shadow:0 0 1px rgba(0,0,0,.2);-moz-box-shadow:0 0 1px rgba(0,0,0,.2);box-shadow:0 0 1px rgba(0,0,0,.2); position: relative; margin-top: 30px;height: 400px; overflow: hidden}
 
 .recipe .intro 	{width:100%;height:auto;margin:0 0 30px;background:#fff;padding:17px 20px;border:none;-webkit-box-shadow:0 0 1px rgba(0,0,0,.2);-moz-box-shadow:0 0 1px rgba(0,0,0,.2);box-shadow:0 0 1px rgba(0,0,0,.2);}
 .recipe .intro p {color:#666;padding:0 0 15px; margin-bottom: 0;}
@@ -797,6 +791,7 @@ div.uploader.disabled.active span.action 		{}
 .intro .three-fourth 	{width:66.66%;}
 .intro .one-fourth 		{width:33.33%;}
 
+.foot {padding: 0;}
 .foot .bottom {margin-left:1.25%;margin-right:1.25%;width:97.5%;}
 
 .boxed li,.item-options a 		{width:33.33%;}
@@ -834,7 +829,7 @@ div.uploader.disabled.active span.action 		{}
 section.cta h2 {line-height:1.4;}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
 .head					{position:relative !important;}
 .head .wrap				{width:100%;max-width:100%;}
 .main-nav				{display:none;}
@@ -863,7 +858,7 @@ section.cta h2 {line-height:1.4;}
 
 .copy,.foot-nav {max-width:100%;width:100%;text-align:center;}
 .foot-nav	{margin-bottom:15px;}
-.foot-nav li 	{display:inline-block;float:none;padding:0 10px 10px;}
+.foot-nav li 	{display:inline-block;float:none;padding:0 10px;}
 
 .recipe .one-half,
 .recipe .one-fourth 				{margin-right:0;width:100%;}
@@ -871,7 +866,10 @@ section.cta h2 {line-height:1.4;}
 .recipe .one-fourth dl:last-child {padding:0;}
 .recipe .one-fourth dt 			{width:100%;margin:0;}
 .recipe .one-fourth dd			{width:100%;}
+.recipe .one-third     {padding:0 5px 5px 5px;}
+.recipe .two-third     {padding:0 5px 0 5px;}
 
+.recipe .image {height: 20%;}
 .post .entry-featured	{width:50%;}
 .post .entry-content		{width:50%;}
 
@@ -920,6 +918,7 @@ section.cta h2 {line-height:1.4;}
 .main .widget img 				{width:100%;}
 .recipePage .sidebar				{margin:0;}
 
+.foot-nav {margin: 10px 0;}
 
 .f-row .third 			{width:100%;margin-bottom:20px;padding:0;}
 .f-row .third:last-child {margin-bottom:0;}
@@ -973,10 +972,11 @@ section.cta h2 {line-height:1.4;}
 
 @media (max-width: 540px) {
 .wrap 		{width:90%;}
-.head 		{height:180px;}
+.head 		{height:50px;}
 .logo 		{margin: 0; width:100%;text-align:center;}
+.logo h2  {padding-top: 12px;}
 .logo img 	{margin:0 auto;}
-.user-nav		{top:90px;}
+.user-nav		{top:0; width: 50px;}
 .slicknav_btn	{top:90px;left:0;right:auto;}
 .slicknav_nav	{top:180px;}
 
