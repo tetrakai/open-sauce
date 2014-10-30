@@ -1,99 +1,75 @@
 ---
 layout: default
 ---
-  <!--main-->
-  <main class="main" role="main">
-    <!--wrap-->
-    <div class="wrap clearfix">
-      <!--row-->
-      <div class="row">
-        <!--content-->
-        <section class="content">
-          <!--recipe-->
-            <div class="recipe">
-              <div class="row">
+<main class="main" role="main">
+  <div class="wrap clearfix">
+    <div class="row">
+      <section class="content">
+        <div class="recipe">
+          <div class="row">
 
-                <!-- Top div -->
-                <article>
-                  <div class="image" style="height: 400px; overflow: hidden">
-                    <header class="s-title">
-                      <h1>{{ page.title }}</h1>
-                    </header>
-                    <img src="{% if page.title_image %}{{ page.title_image }}{% else %}{{ page.local_image | prepend: 'img/recipes/' | prepend: site.baseurl }}{% endif %}" style="width: 100%;"/>
-                  </div>
-                  <div class="intro">
-                  <p><strong>{{ page.description }}</strong></p>
-                  {% if content %}<p>{{ content }}</p>{% endif %}
-                  <span class="reference" style="font-style: italic; font-size: 12px">
-                    {% if page.source_text %}
-                      {% if page.source_link %}
-                        <a href="{{ page.source_link }}"><span class="glyphicon glyphicon-link"></span></a>
-                      {% endif %}
-                      {{ page.source_text }}
-                    {% endif %}
-                  </span>
-                  </div>
-                </article>
+          <!-- Header -->
+            {% if page.title_image %}
+              {% assign image = page.title_image %}
+            {% else %}
+              {% assign image = page.local_image | prepend: 'img/recipes/' | prepend: site.baseurl %}
+            {% endif %}
 
-                <!-- Left side bar -->
-                <article class="one-third">
-                  <dl class="user">
-                    <dt>Preparation time</dt>
-                    <dd>{{ page.prep_time }}</dd>
-                    <dt>Makes</dt>
-                    <dd>{{ page.makes }}</dd>
-                    <dt>Category</dt>
-                    <dd>{{ page.category }}</dd>
-                  </dl>
-
-                  <dl class="ingredients">
-                    {% for ingredient in page.ingredients %}
-                    <dt>{{ ingredient[1] }}</dt>
-                    <dd>{{ ingredient[0] }}</dd>
-                    {% endfor %}
-                  </dl>
-                </article>
-
-                <!-- Right side -->
-                <article class="two-third">
-                  <div class="instructions">
-                    <ol>
-                      {% for step in page.method %}
-                      <li>{{ step }}</li>
-                      {% endfor %}
-                    </ol>
-                  </div>
-                </article>
+            <article>
+              <div class="image" style="height: 400px; overflow: hidden">
+                <header class="s-title">
+                  <h1>{{ page.title }}</h1>
+                </header>
+                <img src="{{ image }}" style="width: 100%;"/>
               </div>
-            </div>
-            <!--//recipe-->
-        </section>
-        <!--//content-->
-      </div>
-      <!--//row-->
+
+              <div class="intro">
+              <p><strong>{{ page.description }}</strong></p>
+              <p>{{ content }}</p>
+
+              <span class="reference" style="font-style: italic; font-size: 12px">
+                {% if page.source_text %}
+                  {% if page.source_link %}
+                    <a href="{{ page.source_link }}"><span class="glyphicon glyphicon-link"></span></a>
+                  {% endif %}
+                  {{ page.source_text }}
+                {% endif %}
+              </span>
+              </div>
+            </article>
+
+            <!-- Metadata and ingredients sidebar -->
+            <article class="one-third">
+              <dl class="user">
+                <dt>Preparation time</dt>
+                <dd>{{ page.prep_time }}</dd>
+                <dt>Makes</dt>
+                <dd>{{ page.makes }}</dd>
+                <dt>Category</dt>
+                <dd>{{ page.category }}</dd>
+              </dl>
+
+              <dl class="ingredients">
+                {% for ingredient in page.ingredients %}
+                <dt>{{ ingredient[1] }}</dt>
+                <dd>{{ ingredient[0] }}</dd>
+                {% endfor %}
+              </dl>
+            </article>
+
+            <!-- Method -->
+            <article class="two-third">
+              <div class="instructions">
+                <ol>
+                  {% for step in page.method %}
+                    <li>{{ step }}</li>
+                  {% endfor %}
+                </ol>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </div>
-    <!--//wrap-->
-  </main>
-  <!--//main-->
-
-
-  <!-- <div class="post">
-
-    <header class="post-header">
-      <h1 class="post-title"></h1>
-      <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
-
-    {% if page.source_text || page.source_link %}
-      <i>
-      {% if page.source_link %}<a href="{{ page.source_link }}">{% endif %}
-        {% if page.source_text %}{{ page.source_text }}{% else %}{{ page.source_link }}{% endif %}
-      {% if page.source_link %}</a>{% endif %}
-      </i>
-    {% endif %}
-    <article class="post-content">
-      {{ content }}
-    </article>
-
   </div>
-   -->
+</main>
