@@ -11,7 +11,7 @@ gluten_free: false
 dairy_free: false
 ingredients: {
   'apples': '2',
-  'lemon juice': '2 Tbps',
+  'lemon juice': '2 Tbsp',
   'cinnamon': '2 tsps',
   'caster sugar': '250g',
   'unsalted butter': '250g',
