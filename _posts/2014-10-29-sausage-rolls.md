@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Sausage Rolls'
 date:   2014-10-28 21:00
 category: Dinner

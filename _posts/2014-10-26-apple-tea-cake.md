@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Apple Tea Cake'
 date:   2014-10-26 21:00
 category: Baking

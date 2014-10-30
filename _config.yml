@@ -1,9 +1,7 @@
 # Site settings
 title: Open Sauce
-description: > # this means to ignore newlines until "baseurl:"
-  An open source recipe collection.
-baseurl: "/" # the subpath of your site, e.g. /blog/
-url: "https://tetrakai.github.io" # the base hostname & protocol for your site
+baseurl: "/"
+url: "https://tetrakai.github.io"
 twitter_username: tetrakazi
 github_username: tetrakai
 author_url: https://karla.io/
@@ -11,3 +9,9 @@ author_url: https://karla.io/
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+# Default front matter settings
+defaults:
+  -
+    values:
+      layout: recipe

@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Crispy Potato'
 date:   2014-10-29 21:00
 category: Dinner

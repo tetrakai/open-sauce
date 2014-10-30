@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Chocolate Mousse'
 date:   2014-10-26 21:00
 category: Dessert

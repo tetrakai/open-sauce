@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Smartie Cookies'
 date:   2014-10-28 21:00
 category: Baking

@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Butter Carrots'
 date:   2014-10-29 21:00
 category: Dinner

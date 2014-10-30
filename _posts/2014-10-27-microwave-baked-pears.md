@@ -1,5 +1,4 @@
 ---
-layout: recipe
 title:  'Microwave Baked Pears'
 date:   2014-10-27 21:00
 category: Dessert
