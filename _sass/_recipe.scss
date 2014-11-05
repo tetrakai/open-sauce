@@ -787,48 +787,6 @@ div.uploader.disabled.active span.action 		{}
 }
 
 /*RESPONSIVENESS*/
-@media (max-width: 1240px) {
-.intro .three-fourth 	{width:66.66%;}
-.intro .one-fourth 		{width:33.33%;}
-
-.foot {padding: 0;}
-.foot .bottom {margin-left:1.25%;margin-right:1.25%;width:97.5%;}
-
-.boxed li,.item-options a 		{width:33.33%;}
-.members li,.item-options a 	{height:auto !important;}
-.boxed .avatar 				{width:100%;height:auto;}
-
-.basic dt,.ingredients dd 		{width:58%;}
-.basic dd,.ingredients dt 		{width:42%;}
-
-.post					{position:relative;padding-left:90px;}
-.post .entry-meta 		{position:absolute;top:0;left:0;z-index:2;}
-.post .container 		{width:100%;}
-.post .entry-featured	{width:45%;}
-.post .entry-content		{width:55%;}
-.post .actions			{width:100%;padding:0;}
-.post .actions > div 		{margin:0 0 10px;padding:15px 15px 0;}
-
-.share .boxed li 		{width:100%;height:auto;}
-.share .boxed .ico 	{margin-bottom:5px;}
-.boxed li span 		{padding-bottom:10px;}
-
-.actions .difficulty {width:42%;}
-
-.entries .two-third {width:100%;}
-.entries .one-third {width:50%;}
-
-.featured img,
-.my_account figure img,
-.entry img 				{width:100%;}
-.featured.one-third	{width:100%;}
-.featured.one-third figure		{float:left;width:30%;}
-.featured.one-third .container 	{float:left;width:70%;}
-.featured:first-child h2 {position:static;}
-
-section.cta h2 {line-height:1.4;}
-}
-
 @media (max-width: 900px) {
 .head					{position:relative !important;}
 .head .wrap				{width:100%;max-width:100%;}
@@ -869,14 +827,10 @@ section.cta h2 {line-height:1.4;}
 .recipe .one-third     {padding:0 5px 5px 5px;}
 .recipe .two-third     {padding:0 5px 0 5px;}
 
-.recipe .image {height: 20%;}
 .post .entry-featured	{width:50%;}
 .post .entry-content		{width:50%;}
 
 .entries .one-fourth	{min-height:100px;}
-.entry .actions > div	{padding:0;margin:0;}
-.entry .actions div div 	{padding:10px 0 !important;margin:0;width:100% !important;border-right:0;border-bottom:1px solid #ddd;}
-.entry .actions div div:last-child {border:none;}
 
 .home .head {position:relative;}
 .intro .wrap {margin-top:40px;text-align:center;}
@@ -903,74 +857,63 @@ section.cta h2 {line-height:1.4;}
 .modal {width:55%;}
 }
 
-@media (max-width:880px) {
-* {-o-transition-property: none !important;-moz-transition-property: none !important;-ms-transition-property: none !important;-webkit-transition-property: none !important;transition-property: none !important;-o-transform: none !important;-moz-transform: none !important;-ms-transform: none !important;-webkit-transform: none !important;transform: none !important;-webkit-animation: none !important;-moz-animation: none !important;-o-animation: none !important;-ms-animation: none !important;animation: none !important;}
+.recipe-list {margin-top: 30px; margin-left: -12px; margin-right: -43px}
 
-.head .wrap {width:100%;}
+@media (max-width:850px)  {
+  * {-o-transition-property: none !important;-moz-transition-property: none !important;-ms-transition-property: none !important;-webkit-transition-property: none !important;transition-property: none !important;-o-transform: none !important;-moz-transform: none !important;-ms-transform: none !important;-webkit-transform: none !important;transform: none !important;-webkit-animation: none !important;-moz-animation: none !important;-o-animation: none !important;-ms-animation: none !important;animation: none !important;}
 
-.post .entry-featured	{width:100%;}
-.post .entry-content		{width:100%;}
+  .head .wrap {width:100%;}
 
-.three-fourth,.one-half,.one-third,.one-fourth,.one-fifth,.one-sixth,.one-third, .two-third {width:100%;}
+  .post .entry-featured  {width:100%;}
+  .post .entry-content           {width:100%;}
 
-.main .widget 					{width:48.25%;margin-right:3.5%;}
-.main .widget:nth-child(2n) 		{margin-right:0;}
-.main .widget img 				{width:100%;}
-.recipePage .sidebar				{margin:0;}
+  .main .widget                                  {width:48.25%;margin-right:3.5%;}
+  .main .widget:nth-child(2n)            {margin-right:0;}
+  .main .widget img                              {width:100%;}
+  .recipePage .sidebar                           {margin:0;}
 
-.foot-nav {margin: 10px 0;}
+  .foot-nav {margin: 10px 0;}
 
-.f-row .third 			{width:100%;margin-bottom:20px;padding:0;}
-.f-row .third:last-child {margin-bottom:0;}
+  .f-row .third                  {width:100%;margin-bottom:20px;padding:0;}
+  .f-row .third:last-child {margin-bottom:0;}
 
+  .one-third    {float:left;width:50%;padding:0 15px;max-width:100%;}
+  .two-third    {float:left;width:50%;padding:0 15px;max-width:100%;}
+  .wrapper       {padding-left: -15px; padding-right: 15px;}
+  .recipe-list {margin-left: 0; margin-right: 0;}
+  .entry {margin-bottom: 30px !important;}
+
+   .my_account .container         {float:left;width:70%;}
+
+  .featured.one-third .button    {margin:0;}
+  .featured.two-third .more,
+  .featured .more                                {padding:15px 0 10px !important;}
+  .featured.two-third .button    {width:100%;}
+
+  .icons .one-sixth {width:50%;}
+
+  .submit_recipe .large  {width:66.66%;margin-bottom:20px;}
+  .submit_recipe .small  {width:33.33%;margin-bottom:20px;padding-right:0 !important;}
+  .ingredient .third,
+  .submit_recipe .instruction .full              {width:90%;}
+
+  .recipefinder .left,
+  .recipefinder .right {width:100%;padding:0;}
+
+  .full-width .entries .entry {width:100%;}
+
+  .modal {width:60%;}
+}
+
+@media (max-width: 600px) {
 .entries .one-third {width:100%;}
 
 .my_account figure,
-.entry figure				{float:left;width:30%;}
+.entry figure       {float:left;width:30%;}
 .entry .container,
-.my_account .container 	{float:left;width:70%;}
+.my_account .container  {float:left;width:70%;}
+.recipe .image {height: 20%;}
 
-.featured.one-third .button 	{margin:0;}
-.featured.two-third .more,
-.featured .more				{padding:15px 0 10px !important;}
-.featured.two-third .button 	{width:100%;}
-
-.icons .one-sixth {width:50%;}
-
-.submit_recipe .large 	{width:66.66%;margin-bottom:20px;}
-.submit_recipe .small 	{width:33.33%;margin-bottom:20px;padding-right:0 !important;}
-.ingredient .third,
-.submit_recipe .instruction .full 		{width:90%;}
-
-.recipefinder .left,
-.recipefinder .right {width:100%;padding:0;}
-
-.full-width .entries .entry {width:100%;}
-
-.modal {width:60%;}
-}
-
-@media (max-width:780px) {
-.wrap {width:94%;}
-.categories li a			{padding-left:20px !important;padding-right:20px !important;}
-.categories li a:before 	{display:none;}
-
-.tabs li 				{width:100%;border-right:none;}
-.tabs .active:before {display:none;}
-
-.above-sidebar .boxed li {width: 16.66%;}
-
-.modal,
-.modal .bwrap {width:100%;}
-
-.content table, .content thead, .content tbody, .content th, .content td, .content tr {display: block; }
-.content thead tr 	{position: absolute;top: -9999px;left: -9999px;}
-.content tr 		{border: 1px solid #ddd; }
-.content td 		{border: none;border-bottom: 1px solid #ddd; position: relative;}
-.pricing tr:nth-child(2) td {font-size:30px;}
-}
-
-@media (max-width: 540px) {
 .wrap 		{width:90%;}
 .head 		{height:50px;}
 .logo 		{margin: 0; width:100%;text-align:center;}
@@ -980,6 +923,8 @@ section.cta h2 {line-height:1.4;}
 .slicknav_btn	{top:90px;left:0;right:auto;}
 .slicknav_nav	{top:180px;}
 
+.three-fourth,.one-half,.one-third,.one-fourth,.one-fifth,.one-sixth,.one-third, .two-third {width:100% !important;}
+
 .recipe .one-fourth dl {width:100%;padding:0;}
 .main .widget {width:100%;margin-right:0;}
 
@@ -987,7 +932,7 @@ section.cta h2 {line-height:1.4;}
 .post .entry-meta {position:static;width:100%;}
 
 .post .actions > div	{border:none;padding-top:0;margin:0;}
-.actions div div 	{padding:10px 0 !important;margin:0;width:100% !important;border-right:0;border-bottom:1px solid #ddd;}
+.actions div div 	{padding:0 !important;margin:0;width:100% !important;border-right:1px solid #ddd;border-bottom:0;}
 
 .comments .depth-2,
 .comments .depth-3 	{padding-left:90px;}

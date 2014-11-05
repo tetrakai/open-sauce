@@ -3,7 +3,7 @@ layout: default
 ---
 <main class="main" role="main">
   <div class="wrap clearfix">
-    <div class="row" style="margin-top: 30px; margin-left: -12px; margin-right: -43px">
+    <div class="row recipe-list">
       <section class="content">
         <div class="entries row">
           <!-- Recipe grid square -->
@@ -27,8 +27,8 @@ layout: default
                 <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
                 <div class="actions">
                   <div>
-                    <div class="likes" style="width: 119px; max-width: 119px"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ post.prep_time }}</div>
-                    <div class="comments" style="width: 119px; text-align: center">
+                    <div class="likes" style="width: 50%; max-width: 50%"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ post.prep_time }}</div>
+                    <div class="comments" style="width: 50%; max-width: 50%; text-align: center">
                       <a href="{{ post.category | downcase | append: '.html' | prepend: site.baseurl }}">{{ post.category }}</a>
                     </div>
                   </div>
