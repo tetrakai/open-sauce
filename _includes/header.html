@@ -5,7 +5,7 @@
     <nav class="main-nav" role="navigation" id="menu">
       <ul>
       {% for category in site.categories %}
-        <li><a href="{{ category[0] | downcase }}.html"><span>{{ category[0] }}</span></a></li>
+        <li><a href="{{ category[0] | downcase | prepend: site.baseurl }}.html"><span>{{ category[0] }}</span></a></li>
       {% endfor %}
       </ul>
     </nav>
