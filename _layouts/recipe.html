@@ -11,6 +11,7 @@ layout: default
           <!-- Header -->
             {% if page.title_image %}
               {% assign image = page.title_image %}
+              {% assign image_source = page.title_image %}
             {% else %}
               {% assign image = page.local_image | prepend: 'img/recipes/' | prepend: site.baseurl %}
             {% endif %}
@@ -33,6 +34,11 @@ layout: default
                     <a href="{{ page.source_link }}"><span class="glyphicon glyphicon-link"></span></a>
                   {% endif %}
                   {{ page.source_text }}
+
+                  {% if page.title_image %}<br /> {% endif %}
+                {% endif %}
+                {% if page.title_image %}
+                  Title image from {{ page.title_image | split:'://' | last | split:'/' | first }}
                 {% endif %}
               </span>
               </div>
