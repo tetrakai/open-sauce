@@ -6,7 +6,7 @@ makes: 20
 prep_time: "40 minutes"
 gluten_free: false
 dairy_free: false
-title_image: "http://www.cakeandallie.com/wp-content/uploads/2011/12/DSC_0127.jpg"
+local_image: "external/gingerbread_cookies.jpg"
 description: "These smell and taste like Christmas, and are as fun to make as they are to eat"
 ingredients: {
   "plain flour": "2 cups",

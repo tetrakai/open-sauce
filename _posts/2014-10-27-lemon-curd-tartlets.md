@@ -6,7 +6,7 @@ makes: 6
 prep_time: "2.5 hours"
 gluten_free: false
 dairy_free: false
-title_image: "http://www.taste.com.au/images/recipes/agt/2005/07/2204_l.jpg"
+local_image: "external/lemon_curd_tartlets.jpg"
 description: "Delicious, lemony goodness, these make summer-time afternoon teas awesome."
 ingredients: {
   "tartlet cases": 6,

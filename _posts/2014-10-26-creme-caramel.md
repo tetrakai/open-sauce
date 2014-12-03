@@ -6,7 +6,7 @@ makes: 4
 prep_time: "1.5 hours"
 gluten_free: true
 dairy_free: false
-title_image: "http://www.taste.com.au/images/recipes/sfi/2009/04/22362_l.jpg"
+local_image: "external/creme_caramel.jpg"
 description: "Perfect for an after-dinner sweet treat."
 ingredients: {
   "caster sugar": "2/3 cup",
