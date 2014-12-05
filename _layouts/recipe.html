@@ -9,19 +9,12 @@ layout: default
           <div class="row">
 
           <!-- Header -->
-            {% if page.title_image %}
-              {% assign image = page.title_image %}
-              {% assign image_source = page.title_image %}
-            {% else %}
-              {% assign image = page.local_image | prepend: 'img/recipes/' | prepend: site.baseurl %}
-            {% endif %}
-
             <article>
               <div class="image">
                 <header class="s-title">
                   <h1>{{ page.title }}</h1>
                 </header>
-                <img src="{{ image }}" style="width: 100%;"/>
+                <img src="{{ page.title_image | prepend: 'img/recipes/' | prepend: site.baseurl }}" style="width: 100%;"/>
               </div>
 
               <div class="intro">
@@ -35,10 +28,11 @@ layout: default
                   {% endif %}
                   {{ page.source_text }}
 
-                  {% if page.title_image %}<br /> {% endif %}
+                  {% if page.image_source %}<br /> {% endif %}
                 {% endif %}
-                {% if page.title_image %}
-                  Title image from {{ page.title_image | split:'://' | last | split:'/' | first }}
+                {% if page.image_source %}
+                  <a href="{{ page.image_source }}"><span class="glyphicon glyphicon-link"></span></a>
+                  Title image from {{ page.image_source | split:'://' | last | split:'/' | first }}
                 {% endif %}
               </span>
               </div>

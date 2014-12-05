@@ -11,14 +11,8 @@ layout: default
             {% if page.category_filter == None or page.category_filter == post.category %}
             <div class="entry one-third" style="margin-bottom: 15px">
               <!-- Recipe picture -->
-              {% if post.title_image %}
-                {% assign image = post.title_image %}
-              {% else %}
-                {% assign image = post.local_image | prepend: 'img/recipes/' | prepend: site.baseurl %}
-              {% endif %}
-
               <figure style="height: 169px; overflow: hidden;">
-                <img src="{{ image }}" alt="{{ post.title }}" />
+                <img src="{{ post.title_image | prepend: 'img/recipes/' | prepend: site.baseurl }}" alt="{{ post.title }}" />
                 <figcaption><a href="{{ post.url }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
               </figure>
 

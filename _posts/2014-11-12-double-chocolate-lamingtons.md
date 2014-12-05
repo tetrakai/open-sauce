@@ -6,7 +6,8 @@ makes: 10
 prep_time: "3 hours"
 gluten_free: false
 dairy_free: false
-title_image: "http://i.guim.co.uk/static/w-620/h--/q-95/sys-images/Guardian/Pix/pictures/2012/4/17/1334676571228/Double-chocolate-lamingto-007.jpg"
+title_image: "external/chocolate_lamingtons.jpg"
+image_source: "http://i.guim.co.uk/static/w-620/h--/q-95/sys-images/Guardian/Pix/pictures/2012/4/17/1334676571228/Double-chocolate-lamingto-007.jpg"
 description: "Super chocolately, these lamingtons are controversially non-traditional"
 ingredients: {
   "caster sugar": "300g",

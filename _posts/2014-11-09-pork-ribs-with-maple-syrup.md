@@ -6,7 +6,8 @@ makes: "4 servings"
 prep_time: "1.5 hours"
 gluten_free: true
 dairy_free: true
-title_image: "http://steamykitchen.com/wp-content/uploads/2011/05/Cayenne-Cinnamon-Ribs-Maple-Glaze-Recipe-6744.jpg"
+title_image: "external/maple_ribs.jpg"
+image_source: "http://steamykitchen.com/wp-content/uploads/2011/05/Cayenne-Cinnamon-Ribs-Maple-Glaze-Recipe-6744.jpg"
 description: "This unsual combination is surprisingly delicious and wonderfully filling."
 ingredients: {
   "pork spareribs": "1kg",

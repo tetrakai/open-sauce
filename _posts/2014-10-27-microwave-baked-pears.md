@@ -6,7 +6,8 @@ makes: 4
 prep_time: "10 minutes"
 gluten_free: true
 dairy_free: true
-title_image: "https://4.bp.blogspot.com/-swY5l52gsPE/Tk63cnxFG2I/AAAAAAAAAJ4/RYV-YN3X4ig/s1600/013.JPG"
+title_image: "external/baked_pears.jpg"
+image_source: "https://4.bp.blogspot.com/-swY5l52gsPE/Tk63cnxFG2I/AAAAAAAAAJ4/RYV-YN3X4ig/s1600/013.JPG"
 description: "Want dessert in a snap? These delicious pears take just minutes to make"
 ingredients: {
   "ripe pears": 2,

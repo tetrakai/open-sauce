@@ -6,7 +6,8 @@ makes: 16
 prep_time: "45 minutes"
 gluten_free: false
 dairy_free: false
-title_image: "http://www.taste.com.au/images/recipes/wfr/2005/10/13975_l.jpg"
+title_image: "external/sausage_rolls.jpg"
+image_source: "http://www.taste.com.au/images/recipes/wfr/2005/10/13975_l.jpg"
 description: "Good old Aussie sausage rolls, these spice up any meat-eating party."
 ingredients: {
   "mince": "300g",

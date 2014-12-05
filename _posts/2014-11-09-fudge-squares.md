@@ -6,7 +6,8 @@ makes: "around 20"
 prep_time: "20 minutes"
 gluten_free: false
 dairy_free: false
-title_image: "http://you.co.za/wp-content/uploads/2014/10/Chocolate-fudge-squares.png"
+title_image: "external/fudge_squares.jpg"
+image_source: "http://you.co.za/wp-content/uploads/2014/10/Chocolate-fudge-squares.png"
 description: "These are a breeze to whip up, and make for a great chocolate afternoon snack"
 ingredients: {
   "butter": "175g",

@@ -6,7 +6,8 @@ makes: "2 servings"
 prep_time: "45 minutes"
 gluten_free: true
 dairy_free: false
-title_image: "https://1.bp.blogspot.com/-Ke0PO3iBzNs/T2cw0fad-dI/AAAAAAAAIXk/LukTuBQOo9o/s1600/honey+balsamic+butter+carrots.jpg"
+title_image: "external/butter_carrots.jpg"
+image_source: "https://1.bp.blogspot.com/-Ke0PO3iBzNs/T2cw0fad-dI/AAAAAAAAIXk/LukTuBQOo9o/s1600/honey+balsamic+butter+carrots.jpg"
 description: "A family recipe, even carrot-haters will enjoy these!"
 ingredients: {
   "butter": "1 Tbsp",

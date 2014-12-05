@@ -6,7 +6,8 @@ makes: "8 servings"
 prep_time: "1.5 hours"
 gluten_free: false
 dairy_free: false
-local_image: "external/apple_tea_cake.jpg"
+title_image: "external/apple_tea_cake.jpg"
+image_source: "http://www.taste.com.au/images/recipes/del/2004/06/5106_l.jpg"
 description: "Fill the house with the beautiful aroma of freshly baked apple tea cake, then slice and enjoy!"
 ingredients: {
   "apples": 2,

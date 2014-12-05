@@ -6,7 +6,8 @@ makes: "24 pieces"
 prep_time: "2.5 hours"
 gluten_free: false
 dairy_free: false
-local_image: "external/lemon_slice.jpg"
+title_image: "external/lemon_slice.jpg"
+image_source: "http://www.todayprimetime.com/wp-content/uploads/2014/04/Lemon-slice.jpg"
 description: "Super morish, it's hard not to have another piece of this delectable slice"
 ingredients: {
   "condensed milk": "1/2 cup",

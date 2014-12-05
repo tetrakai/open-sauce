@@ -6,7 +6,8 @@ makes: "4 servings"
 prep_time: "2.5 hours"
 gluten_free: true
 dairy_free: true
-title_image: "https://4.bp.blogspot.com/_0Wr1j_BQLXM/TL7nHsCOrcI/AAAAAAAACHY/9LaXFThtuKo/s1600/Crispy+Potato+Cubes.JPG"
+title_image: "external/crispy_potatoes.jpg"
+image_source: "https://4.bp.blogspot.com/_0Wr1j_BQLXM/TL7nHsCOrcI/AAAAAAAACHY/9LaXFThtuKo/s1600/Crispy+Potato+Cubes.JPG"
 description: "Deliciously crispy, these make a great change to roast potatoes"
 ingredients: {
   "brushed potatoes": "3 large",

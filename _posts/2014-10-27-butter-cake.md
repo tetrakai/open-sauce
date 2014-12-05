@@ -6,7 +6,8 @@ makes: "12 servings"
 prep_time: "1.5 hours"
 gluten_free: false
 dairy_free: false
-local_image: "external/butter_cake.jpg"
+title_image: "external/butter_cake.jpg"
+image_source: "http://bakistryblog.files.wordpress.com/2013/06/a88a8-buttercakelight02.jpg"
 description: "A wonderfully sweet base for cooking adventures."
 ingredients: {
   "butter, softened": "185g",

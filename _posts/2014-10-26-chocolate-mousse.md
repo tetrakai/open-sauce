@@ -6,7 +6,8 @@ makes: "6 to 8"
 prep_time: "30 minutes"
 gluten_free: true
 dairy_free: false
-local_image: "external/chocolate_mousse.jpg"
+title_image: "external/chocolate_mousse.jpg"
+image_source: "http://bookpage.com/the-book-case/wp-content/uploads/2012/06/91_Food-Processor-Chocolate-Mousse.jpg"
 description: "This classic recipe is light but deliciously rich. Thick and creamy and bad for you."
 ingredients: {
   "milk or dark chocolate": "200g",
