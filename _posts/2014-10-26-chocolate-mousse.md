@@ -14,9 +14,9 @@ ingredients: {
   "thickened cream": "300mL"
 }
 method: [
-  "Beat egg whites (with <strong>clean</strong> beaters) until soft beaks form, set aside.",
+  "Beat egg whites (with <strong>clean</strong> beaters) until soft peaks form, set aside.",
   "Whip cream in a large bowl until soft peaks form, set aside.",
-  "Melt chocolate in double boiler, then stir in egg yolks and any flavouring.",
+  "Melt chocolate in double boiler or microwave, then stir in egg yolks (if not using pure egg whites) and any flavouring.",
   "Allow to cool slightly, gently fold the chocolate mixture through the cream.",
   "Lightly fold egg whites into chocolate and cream mixture, spoon into small dishes, and serve."
 ]
