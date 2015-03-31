@@ -13,12 +13,12 @@ layout: default
               <!-- Recipe picture -->
               <figure style="height: 169px; overflow: hidden;">
                 <img src="{{ post.title_image | prepend: 'img/recipes/' | prepend: site.baseurl }}" alt="{{ post.title }}" />
-                <figcaption><a href="{{ post.url }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+                <figcaption><a href="{{ post.url | prepend: site.baseurl }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
               </figure>
 
               <!-- Recipe information -->
               <div class="container">
-                <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ post.url |prepend: site.baseurl }}">{{ post.title }}</a></h2>
                 <div class="actions">
                   <div>
                     <div class="likes" style="width: 50%; max-width: 50%"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ post.prep_time }}</div>
