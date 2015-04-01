@@ -97,9 +97,10 @@ var map = {
       $.getJSON('/search.json', function(data) {
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
-          // Display 'no results found' or similar here
+          alert('no results!');
           noResultsPage();
         } else {
+          alert('results found!');
           layoutResultsPage(type, value, posts);
         }
       });
