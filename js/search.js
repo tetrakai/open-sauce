@@ -87,10 +87,10 @@ var displayTemplate = function(template, element, data) {
   };
 
 $(document).ready(function() {
-var map = {
-  'category' : getParam('category'),
-  'tags'     : getParam('tags')
-};
+  var map = {
+    'category' : getParam('category'),
+    'tags'     : getParam('tags')
+  };
 
   $.each(map, function(type, value) {
     if (value !== null) {
