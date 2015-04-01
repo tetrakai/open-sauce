@@ -48,7 +48,11 @@ layout: default
                 <dt>Category</dt>
                 <dd>{{ page.category }}</dd>
 		<dt>Tags</dt>
-		<dd>{{ page.tags }}</dd>
+		<dd>
+		   {% for tag in page.tags %}
+		   {{ tag }}<br/>
+                   {% endfor %} 
+		</dd>
               </dl>
 
               <dl class="ingredients">
