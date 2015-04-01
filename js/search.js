@@ -66,9 +66,9 @@
     dict["page"] = {};
     dict["page"]["category_filter"] = "";
 
-    getTemplateAjax("_layouts/recipe_list.html", ".results", dict, displayTemplate);
+    //getTemplateAjax("_layouts/recipe_list.html", ".results", dict, displayTemplate);
   };
-
+/*
 function getTemplateAjax(path, element, dict, callback) {
         var source;
         var template;
@@ -87,8 +87,7 @@ function getTemplateAjax(path, element, dict, callback) {
             }
         });
     }
-
-
+*/
 
 var displayTemplate = function(template, element, data) {
     //Replace the body section with the new code.
