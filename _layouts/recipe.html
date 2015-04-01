@@ -46,11 +46,11 @@ layout: default
                 <dt>Makes</dt>
                 <dd>{{ page.makes }}</dd>
                 <dt>Category</dt>
-                <dd><a href = "{{ page.category | downcase | prepend: '/search.html?category=' | prepend: site.baseurl }}">{{ page.category }}</a></dd>
+                <dd><a href = "{{ page.category | downcase | prepend: 'search.html?category=' | prepend: site.baseurl }}">{{ page.category }}</a></dd>
 		<dt>Tags</dt>
 		<dd style="overflow-x: scroll; white-space: nowrap;">
 		   {% for tag in page.tags %}
-		   <a href="{{ tag | downcase | prepend: '/search.html?tags=' | prepend: site.baseurl }}">{{ tag }}</a>
+		   <a href="{{ tag | downcase | prepend: 'search.html?tags=' | prepend: site.baseurl }}">{{ tag }}</a>
 		   {% if forloop.last == false %}, {% endif %}
                    {% endfor %}
 		</dd>

@@ -1,0 +1,8 @@
+{
+  "title"    : "{{ post.title }}",
+  "category" : "{{ post.category }}",
+  "tags"     : [{% for tag in post.tags %}"{{ tag }}",{% endfor %} null],
+  "url"     : "{{ post.url }}",
+  "title_image" : "{{ post.title_image }}",
+  "prep_time" : "{{ post.prep_time }}"
+}
