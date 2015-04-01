@@ -9,3 +9,14 @@ author_url: https://karla.io/
 # Build settings
 markdown: kramdown
 highlighter: pygments
+
+# Default front matter settings
+defaults:
+  -
+    values:
+      layout: recipe
+-
+    scope:
+      path: ""
+    values:
+      layout: ""
