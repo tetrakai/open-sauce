@@ -12,11 +12,5 @@ highlighter: pygments
 
 # Default front matter settings
 defaults:
-  -
     values:
       layout: recipe
--
-    scope:
-      path: ""
-    values:
-      layout: ""
