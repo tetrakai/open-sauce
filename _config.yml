@@ -12,6 +12,6 @@ highlighter: pygments
 
 # Default front matter settings
 defaults:
--
+  -
     values:
       layout: recipe
