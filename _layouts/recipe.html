@@ -45,12 +45,12 @@ layout: default
                 <dd>{{ page.prep_time }}</dd>
                 <dt>Makes</dt>
                 <dd>{{ page.makes }}</dd>
-                <dt><a href = "/search.html?category={{ page.category | downcase }}">Category</a></dt>
-                <dd>{{ page.category }}</dd>
+                <dt>Category</dt>
+                <dd><a href = "/search.html?category={{ page.category | downcase }} | prepend: site.baseurl ">{{ page.category }}</a></dd>
 		<dt>Tags</dt>
 		<dd style="overflow-x: scroll; white-space: nowrap;">
 		   {% for tag in page.tags %}
-		   <a href="/search.html?tags={{ tag | downcase }}">{{ tag }}</a>
+		   <a href="/search.html?tags={{ tag | downcase }} | prepend: site.baseurl">{{ tag }}</a>
 		   {% if forloop.last == false %}, {% endif %}
                    {% endfor %}
 		</dd>
