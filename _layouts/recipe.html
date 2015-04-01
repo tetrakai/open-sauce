@@ -48,10 +48,8 @@ layout: default
                 <dt>Category</dt>
                 <dd>{{ page.category }}</dd>
 		<dt>Tags</dt>
-		<dd>
-		   {% for tag in page.tags %}
-		   {{ tag }}<br/>
-                   {% endfor %} 
+		<dd style="overflow-x: scroll;">
+		   {% for tag in page.tags %}{{ tag }} {% endfor %}
 		</dd>
               </dl>
 
