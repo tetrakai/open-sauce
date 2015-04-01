@@ -66,8 +66,29 @@
     dict["page"] = {};
     dict["page"]["category_filter"] = "";
 
-   displayTemplate("_layouts/recipe_list.html", ".results",  dict);
+    getTemplateAjax("_layouts/recipe_list.html", ".results", dict, displayTemplate);
   };
+
+function getTemplateAjax(path, element, dict, callback) {
+        var source;
+        var template;
+
+        $.ajax({
+                url: path,
+                success: function(data) {
+                    //Get the Template and compile it
+                    source    =  data;
+                    template  = Handlebars.compile(source);
+
+                    //execute the callback if passed
+                    if (callback) {
+                        callback(template, element, dict);
+                   }
+            }
+        });
+    }
+
+
 
 var displayTemplate = function(template, element, data) {
     //Replace the body section with the new code.
