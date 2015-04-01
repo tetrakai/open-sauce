@@ -94,7 +94,7 @@ var map = {
 
   $.each(map, function(type, value) {
     if (value !== null) {
-      $.getJSON('/search.json', function(data) {
+      $.getJSON('/open-sauce/search.json', function(data) { //TODO: not hardcode the base url
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
           alert('no results!');
