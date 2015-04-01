@@ -2,7 +2,6 @@
 title: "Icecream Cupcakes"
 date: 2014-12-07
 category: "Baking"
-tags: "dessert cupcakes baking"
 makes: 24
 prep_time: "3 hours"
 gluten_free: false
