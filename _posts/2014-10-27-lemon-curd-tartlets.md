@@ -2,6 +2,7 @@
 title: "Lemon Curd Tartlets"
 date: 2014-10-27
 category: "Baking"
+tags: [baking, lemon, vegetarian]
 makes: 6
 prep_time: "2.5 hours"
 gluten_free: false

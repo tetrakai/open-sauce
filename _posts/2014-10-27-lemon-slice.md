@@ -2,7 +2,7 @@
 title: "Lemon Slice"
 date: 2014-10-27
 category: "Baking"
-tags: "baking"
+tags: [baking, fruit, vegetarian]
 makes: "24 pieces"
 prep_time: "2.5 hours"
 gluten_free: false

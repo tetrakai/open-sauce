@@ -2,6 +2,7 @@
 title: "Chocolate Cake for Two"
 date: 2014-12-07
 category: "Dessert"
+tags: [chocolate, cake, vegetarian, dessert, baking]
 makes: "enough for 2"
 prep_time: "1 hour"
 gluten_free: false

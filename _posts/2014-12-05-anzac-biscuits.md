@@ -2,6 +2,7 @@
 title: "Anzac Biscuits"
 date: 2014-12-05
 category: "Baking"
+tags: [baking, cookies, vegetarian, coconut]
 makes: 20
 prep_time: "1 hour"
 gluten_free: false

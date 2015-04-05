@@ -2,6 +2,7 @@
 title: "Sausage Rolls"
 date: 2014-10-28
 category: "Dinner"
+tags: [dinner, savory, meat]
 makes: 16
 prep_time: "45 minutes"
 gluten_free: false

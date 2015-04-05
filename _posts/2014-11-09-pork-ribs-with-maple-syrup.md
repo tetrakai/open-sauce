@@ -2,7 +2,7 @@
 title: "Maple Ribs"
 date: 2014-11-09
 category: "Dinner"
-tags: "gluten-free dairy-free dinner"
+tags: [gluten-free, dairy-free, dinner, meat]
 makes: "4 servings"
 prep_time: "1.5 hours"
 gluten_free: true

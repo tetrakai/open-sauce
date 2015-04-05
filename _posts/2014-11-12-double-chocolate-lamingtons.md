@@ -2,6 +2,7 @@
 title: "Chocolate Lamingtons"
 date: 2014-11-12
 category: "Baking"
+tags: [chocolate, baking, coconut, vegetarian]
 makes: 10
 prep_time: "3 hours"
 gluten_free: false

@@ -2,7 +2,7 @@
 title: "Apple Tea Cake"
 date: 2014-10-26
 category: "Baking"
-tags: "cake baking"
+tags: [cake, baking, vegetarian]
 makes: "8 servings"
 prep_time: "1.5 hours"
 gluten_free: false

@@ -2,7 +2,7 @@
 title: "Crème Caramel"
 date: 2014-10-26
 category: "Dessert"
-tags: "gluten-free caramel"
+tags: [gluten-free, caramel, vegetarian]
 makes: 4
 prep_time: "1.5 hours"
 gluten_free: true

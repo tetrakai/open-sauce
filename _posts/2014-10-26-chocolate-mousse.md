@@ -2,6 +2,7 @@
 title: "Chocolate Mousse"
 date: 2014-10-26
 category: "Dessert"
+tags: [dessert, chocolate, vegetarian]
 makes: "6 to 8"
 prep_time: "30 minutes"
 gluten_free: true

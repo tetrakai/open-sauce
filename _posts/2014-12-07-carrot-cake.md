@@ -2,7 +2,7 @@
 title: "Mini Carrot Cakes"
 date: 2014-12-07
 category: "Baking"
-tags: "dairy-free baking cake"
+tags: [dairy-free, baking, cake, vegetarian, vegetables]
 makes: "around 12"
 prep_time: "1 hour"
 gluten_free: false
