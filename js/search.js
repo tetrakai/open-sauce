@@ -65,7 +65,7 @@ var layoutResultsPage = function(property, value, posts) {
   dict["baseurl"] = "/open-sauce";
 
   console.log("Going to display: ", dict);
-  getTemplateAjax("search_results_list.html", ".results", dict, displayTemplate);
+  getTemplateAjax("search_results_list.html", "#results", dict, displayTemplate);
 };
 
 function getTemplateAjax(path, element, dict, callback) {
@@ -74,8 +74,8 @@ function getTemplateAjax(path, element, dict, callback) {
     success: function(data) {
       //Get the Template and compile it
       var template  = Handlebars.compile(data);
-        if (callback) {
-          callback(template, element, dict);
+      if (callback) {
+        callback(template, element, dict);
       }
     }
   });
@@ -93,8 +93,10 @@ var displayTemplate = function(template, element, data) {
 // Returns:
 //  undefined
 var noResultsPage = function(property, value) {
-  $('.results').text(
-    '<h1>No Results Found</h1>\
+  console.log ("No results found");
+  $('#results').html(
+    '<br/><br/>\
+    <h1>No Results Found</h1>\
     <p>Sorry, none of these recipes are described as ‘' + value + '’.</p>'
   );
 };
@@ -110,10 +112,8 @@ $(document).ready(function() {
       $.getJSON('/open-sauce/search.json', function(data) { //TODO: not hardcode the base url
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
-          alert('no results!');
-          noResultsPage();
+          noResultsPage(type, value);
         } else {
-          console.log("Results!", type, value, posts);
           layoutResultsPage(type, value, posts);
         }
       });
