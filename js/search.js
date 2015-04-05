@@ -2,122 +2,121 @@
 
 // Retrieves the value of a GET parameter with a given key
 // Accepts:
-//	param: string
+//  param: string
 // Returns:
-//	string or null
+//  string or null
 var getParam = function(param) {
-	var queryString = window.location.search.substring(1), queries = queryString.split('&');
-	for (var i in queries) {
-		var pair = queries[i].split('=');
-		if (pair[0] === param) {
-        		// Decode the parameter value, replacing %20 with a space etc.
-        		return decodeURI(pair[1]);
-		}
-	}
-	return null;
+  var queryString = window.location.search.substring(1), queries = queryString.split('&');
+  for (var i in queries) {
+    var pair = queries[i].split('=');
+    if (pair[0] === param) {
+      // Decode the parameter value, replacing %20 with a space etc.
+      return decodeURI(pair[1]);
+    }
+  }
+  return null;
 };
 
   // Filters posts with the condition `post['property'] == value`
   // Accepts:
-  //	posts - array of post objects and a string
-  //	property - string of post object property to compare
-  //	value - filter value of property
+  //  posts - array of post objects and a string
+  //  property - string of post object property to compare
+  //  value - filter value of property
   // Returns:
-  //	array of post objects
+  //  array of post objects
 var filterPostsByPropertyValue = function(posts, property, value) {
-	var filteredPosts = [];
-	// The last element is a null terminator
-	posts.pop();
-	for (var i in posts) {
-		var post = posts[i],
-		prop = post[property];
+  var filteredPosts = [];
+  // The last element is a null terminator
+  posts.pop();
+  for (var i in posts) {
+    var post = posts[i],
+    prop = post[property];
 
-		// Last element of tags is null
-		post.tags.pop();
+    // Last element of tags is null
+    post.tags.pop();
 
-		  // The property could be a string, such as a post's category,
-		  // or an array, such as a post's tags
-		if (prop.constructor === String) {
-			if (prop.toLowerCase() === value.toLowerCase()) {
-				filteredPosts.push(post);
-			}
-		} else if (prop.constructor === Array) {
-			for (var j in prop) {
-				if (prop[j].toLowerCase() === value.toLowerCase()) {
-				  filteredPosts.push(post);
-				}
-			}
-		}
-	}
-
-	return filteredPosts;
+      // The property could be a string, such as a post's category,
+      // or an array, such as a post's tags
+    if (prop.constructor === String) {
+      if (prop.toLowerCase() === value.toLowerCase()) {
+        filteredPosts.push(post);
+      }
+    } else if (prop.constructor === Array) {
+      for (var j in prop) {
+        if (prop[j].toLowerCase() === value.toLowerCase()) {
+          filteredPosts.push(post);
+        }
+      }
+    }
+  }
+  return filteredPosts;
 };
 
-  // Formats search results and appends them to the DOM
-  // Accepts:
-  //	property: string of object type we're displaying
-  //	value: string of name of object we're displaying
-  //	posts: array of post objects
-  // Returns:
-  //	undefined
+// Formats search results and appends them to the DOM
+// Accepts:
+//  property: string of object type we're displaying
+//  value: string of name of object we're displaying
+//  posts: array of post objects
+// Returns:
+//  undefined
 var layoutResultsPage = function(property, value, posts) {
-	var dict = {};
-	dict["posts"] = posts;
-	dict["baseurl"] = "/open-sauce";
+  var dict = {};
+  dict["posts"] = posts;
+  dict["baseurl"] = "/open-sauce";
 
-	console.log("Going to display: ", dict);
-      getTemplateAjax("search_results_list.html", ".results", dict, displayTemplate);
+  console.log("Going to display: ", dict);
+  getTemplateAjax("search_results_list.html", ".results", dict, displayTemplate);
 };
 
 function getTemplateAjax(path, element, dict, callback) {
-	$.ajax({
-		url: path,
-		success: function(data) {
-			//Get the Template and compile it
-			var template  = Handlebars.compile(data);
-
-            	       if (callback) {
-            			callback(template, element, dict);
-			}
-		}
-	});
+  $.ajax({
+    url: path,
+    success: function(data) {
+      //Get the Template and compile it
+      var template  = Handlebars.compile(data);
+        if (callback) {
+          callback(template, element, dict);
+      }
+    }
+  });
 }
 
 var displayTemplate = function(template, element, data) {
-	//Replace the body section with the new code.
-	$(element).append(template(data));
+  //Replace the body section with the new code.
+  $(element).append(template(data));
 }
 
 // Formats the search results page for no results
 // Accepts:
-//	property: string of object type we're displaying
-//	value: string of name of object we're displaying
+//  property: string of object type we're displaying
+//  value: string of name of object we're displaying
 // Returns:
-//	undefined
+//  undefined
 var noResultsPage = function(property, value) {
-      $('.results').text('<h1>No Results Found</h1>\
-              <p>Sorry, none of these recipes are described as ‘' + value + '’.</p>'
-      );
+  $('.results').text(
+    '<h1>No Results Found</h1>\
+    <p>Sorry, none of these recipes are described as ‘' + value + '’.</p>'
+  );
 };
 
 $(document).ready(function() {
-      var map = {
-	       'category' : getParam('category'),
-	       'tags'	     : getParam('tags')
-      };
+  var map = {
+    'category' : getParam('category'),
+    'tags'       : getParam('tags')
+  };
 
-      $.each(map, function(type, value) {
-        	if (value !== null) {
-        		$.getJSON('/open-sauce/search.json', function(data) { //TODO: not hardcode the base url
-        		       posts = filterPostsByPropertyValue(data, type, value);
-        	             if (posts.length === 0) {
-        		             alert('no results!');
-        		             noResultsPage();
-        	             } else {
-        		             console.log("Results!", type, value, posts);
-        		             layoutResultsPage(type, value, posts);
-        	             }
-		      });
-	       }
+  $.each(map, function(type, value) {
+    if (value !== null) {
+      $.getJSON('/open-sauce/search.json', function(data) { //TODO: not hardcode the base url
+        posts = filterPostsByPropertyValue(data, type, value);
+        if (posts.length === 0) {
+          alert('no results!');
+          noResultsPage();
+        } else {
+          console.log("Results!", type, value, posts);
+          layoutResultsPage(type, value, posts);
+        }
       });
+    }
+  });
 });
