@@ -2,6 +2,7 @@
 title: "Crispy Potato"
 date: 2014-10-29
 category: "Dinner"
+tags: [gluten-free, dairy-free, dinner, potato, side-dish, vegetarian, vegan]
 makes: "4 servings"
 prep_time: "2.5 hours"
 gluten_free: true

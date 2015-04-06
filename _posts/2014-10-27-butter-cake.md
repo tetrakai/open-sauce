@@ -2,6 +2,7 @@
 title: "Butter cake"
 date: 2014-10-27
 category: "Baking"
+tags: [baking, cake, vegetarian]
 makes: "12 servings"
 prep_time: "1.5 hours"
 gluten_free: false

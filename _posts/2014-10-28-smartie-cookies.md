@@ -2,6 +2,7 @@
 title: "Smartie Cookies"
 date: 2014-10-28
 category: "Baking"
+tags: [baking, cookies, vegetarian, chocolate]
 makes: 20
 prep_time: "30 minutes"
 gluten_free: false

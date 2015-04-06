@@ -1,0 +1,34 @@
+<main class="main" role="main">
+  <div class="wrap clearfix">
+    <div class="row recipe-list">
+      <section class="content">
+        <div class="entries row">
+          <!-- Recipe grid square -->
+          {{#each posts}}
+            <div class="entry one-third" style="margin-bottom: 15px">
+              <!-- Recipe picture -->
+              <figure style="height: 169px; overflow: hidden;">
+                <img src="{{ ../baseurl }}/img/recipes/{{ this.title_image }}" alt="{{ this.title }}" />
+                <figcaption><a href="{{ ../baseurl }}{{ this.url }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+              </figure>
+
+              <!-- Recipe information -->
+              <div class="container">
+                <h2><a href="{{ ../baseurl }}{{ this.url }}">{{ this.title }}</a></h2>
+                <div class="actions">
+                  <div>
+                    <div class="likes" style="width: 50%; max-width: 50%"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ this.prep_time }}</div>
+                    <div class="comments" style="width: 50%; max-width: 50%; text-align: center">
+                      <a href="{{ ../baseurl }}{{ this.category }}.html">{{ this.category }}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{/each}}
+          <!-- End recipe grid square -->
+        </div>
+      </section>
+    </div>
+  </div>
+</main>

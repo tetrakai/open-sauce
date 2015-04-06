@@ -2,6 +2,7 @@
 title: "Gingerbread Cookies"
 date: 2014-10-27
 category: "Baking"
+tags: [baking, cookies, vegetarian]
 makes: 20
 prep_time: "40 minutes"
 gluten_free: false
