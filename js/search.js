@@ -62,7 +62,7 @@ var filterPostsByPropertyValue = function(posts, property, value) {
 var layoutResultsPage = function(property, value, posts) {
   var dict = {};
   dict["posts"] = posts;
-  dict["baseurl"] = "/open-sauce";
+  dict["baseurl"] = "";
 
   console.log("Going to display: ", dict);
   getTemplateAjax("search_results_list.html", "#results", dict, displayTemplate);
@@ -109,7 +109,7 @@ $(document).ready(function() {
 
   $.each(map, function(type, value) {
     if (value !== null) {
-      $.getJSON('/open-sauce/search.json', function(data) { //TODO: not hardcode the base url
+      $.getJSON('/search.json', function(data) { //TODO: not hardcode the base url
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
           noResultsPage(type, value);
