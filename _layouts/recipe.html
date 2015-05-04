@@ -47,20 +47,17 @@ layout: default
                 <dd>{{ page.makes }}</dd>
                 <dt>Category</dt>
                 <dd><a href = "{{ page.category | downcase | prepend: 'search.html?category=' | prepend: site.baseurl }}">{{ page.category }}</a></dd>
-                {% capture difference %} {{ page.tags | size | minus:1 }} {% endcapture %}
-                {% unless difference contains '-' %}
+                {% if page.tags.size > 0 %}
                 <dt>Tags</dt>
                 <dd style="overflow-x: scroll; white-space: nowrap;">
                   {% assign sorted_tags = (page.tags | sort) %}
                   {% for tag in sorted_tags %}
-                <a href="{{ tag | downcase | prepend: 'search.html?tags=' | prepend: site.baseurl }}">{{ tag }}</a>
-                    {% if forloop.last == false %}, {% endif %}
-                  {% endfor %}
+                <a href="{{ tag | downcase | prepend: 'search.html?tags=' | prepend: site.baseurl }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
                 </dd>
-                {% endunless %}
-                </dl>
+                {% endif %}
+              </dl>
 
-                <dl class="ingredients">
+              <dl class="ingredients">
                 {% for ingredient in page.ingredients %}
                 <dt>{{ ingredient[1] }}</dt>
                 <dd>{{ ingredient[0] }}</dd>
