@@ -13,5 +13,8 @@ highlighter: pygments
 # Default front matter settings
 defaults:
   -
+    scope:
+      path: ""
+      type: "posts"
     values:
-      layout: recipe
+      layout: "recipe"
