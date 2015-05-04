@@ -29,8 +29,8 @@ var filterPostsByPropertyValue = function(posts, property, value) {
   // The last element is a null terminator
   posts.pop();
   for (var i in posts) {
-    var post = posts[i],
-    prop = post[property];
+    var post = posts[i];
+    var prop = post[property];
 
     // Last element of tags is null
     post.tags.pop();
@@ -63,8 +63,8 @@ var layoutResultsPage = function(property, value, posts) {
   var dict = {};
   dict["posts"] = posts;
   dict["baseurl"] = "";
-
-  console.log("Going to display: ", dict);
+  $('#results').html("");
+  $('#results').css('visibility', 'visible');
   getTemplateAjax("search_results_list.html", "#results", dict, displayTemplate);
 };
 
@@ -93,12 +93,8 @@ var displayTemplate = function(template, element, data) {
 // Returns:
 //  undefined
 var noResultsPage = function(property, value) {
-  console.log ("No results found");
-  $('#results').html(
-    '<br/><br/>\
-    <h1>No Results Found</h1>\
-    <p>Sorry, none of these recipes are described as ‘' + value + '’.</p>'
-  );
+  $('#results').css('visibility', 'visible');
+  $('#results .value').text(value);
 };
 
 $(document).ready(function() {
@@ -109,7 +105,7 @@ $(document).ready(function() {
 
   $.each(map, function(type, value) {
     if (value !== null) {
-      $.getJSON('/search.json', function(data) { //TODO: not hardcode the base url
+      $.getJSON('/search.json', function(data) {
         posts = filterPostsByPropertyValue(data, type, value);
         if (posts.length === 0) {
           noResultsPage(type, value);
