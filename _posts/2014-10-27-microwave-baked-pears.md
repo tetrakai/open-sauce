@@ -2,6 +2,7 @@
 title: "Microwave Baked Pears"
 date: 2014-10-27
 category: "Dessert"
+tags: [gluten-free, dairy-free, dessert, fruit, vegetarian]
 makes: 4
 prep_time: "10 minutes"
 gluten_free: true

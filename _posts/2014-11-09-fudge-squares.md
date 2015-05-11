@@ -2,6 +2,7 @@
 title: "Fudge Squares"
 date: 2014-11-09
 category: "Baking"
+tags: [baking, chocolate, vegetarian, fudge]
 makes: "around 20"
 prep_time: "20 minutes"
 gluten_free: false

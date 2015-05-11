@@ -2,6 +2,7 @@
 title: "Butter Carrots"
 date: 2014-10-29
 category: "Dinner"
+tags: [dinner, gluten-free, vegetables, side-dish, vegetarian]
 makes: "2 servings"
 prep_time: "45 minutes"
 gluten_free: true
