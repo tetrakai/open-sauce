@@ -12,18 +12,18 @@ layout: default
             <div class="entry one-third" style="margin-bottom: 15px">
               <!-- Recipe picture -->
               <figure style="height: 169px; overflow: hidden;">
-                <img src="{{ post.title_image | prepend: 'img/recipes/' | prepend: site.baseurl }}" alt="{{ post.title }}" />
-                <figcaption><a href="{{ post.url | remove_first:'/' | prepend: site.baseurl }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
+                <img src="{{ post.title_image | prepend: '/img/recipes/' | relative_url }}" alt="{{ post.title }}" />
+                <figcaption><a href="{{ post.url | relative_url }}"><i class="ico i-view"></i> <span>View recipe</span></a></figcaption>
               </figure>
 
               <!-- Recipe information -->
               <div class="container">
-                <h2><a href="{{ post.url | remove_first:'/' | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
                 <div class="actions">
                   <div>
                     <div class="likes" style="width: 50%; max-width: 50%"><i class="glyphicon glyphicon-time"></i>&nbsp;&nbsp;{{ post.prep_time }}</div>
                     <div class="comments" style="width: 50%; max-width: 50%; text-align: center">
-                      <a href="{{ post.category | downcase | append: '.html' | prepend: site.baseurl }}">{{ post.category }}</a>
+                      <a href="{{ post.category | downcase | append: '.html' | prepend: '/' | relative_url }}">{{ post.category }}</a>
                     </div>
                   </div>
                 </div>

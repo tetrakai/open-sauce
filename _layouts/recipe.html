@@ -14,7 +14,7 @@ layout: default
                 <header class="s-title">
                   <h1>{{ page.title }}</h1>
                 </header>
-                <img src="{{ page.title_image | prepend: 'img/recipes/' | prepend: site.baseurl }}" style="width: 100%;"/>
+                <img src="{{ page.title_image | prepend: '/img/recipes/' | relative_url }}" style="width: 100%;"/>
               </div>
 
               <div class="intro">
@@ -46,13 +46,13 @@ layout: default
                 <dt>Makes</dt>
                 <dd>{{ page.makes }}</dd>
                 <dt>Category</dt>
-                <dd><a href = "{{ page.category | downcase | prepend: 'search.html?category=' | prepend: site.baseurl }}">{{ page.category }}</a></dd>
+                <dd><a href = "{{ page.category | downcase | prepend: '/search.html?category=' | relative_url }}">{{ page.category }}</a></dd>
                 {% if page.tags.size > 0 %}
                 <dt>Tags</dt>
                 <dd style="overflow-x: scroll; white-space: nowrap;">
                   {% assign sorted_tags = (page.tags | sort) %}
                   {% for tag in sorted_tags %}
-                <a href="{{ tag | downcase | prepend: 'search.html?tags=' | prepend: site.baseurl }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
+                <a href="{{ tag | downcase | prepend: '/search.html?tags=' | relative_url }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}
                 </dd>
                 {% endif %}
               </dl>
