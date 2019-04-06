@@ -18,3 +18,5 @@ defaults:
       type: "posts"
     values:
       layout: "recipe"
+
+theme: jekyll-theme-slate
